@@ -4,7 +4,7 @@ from rest_framework.generics import ListCreateAPIView, RetrieveAPIView
 
 from .models import Question, Answer
 from .serializers import QuestionSerializer, AnswerSerializer
-from .permissions import ReadOnlyOrIsAuthenticated
+from .permissions import ReadOnlyOrIsAuthenticated, IsQuestionAuthor
 
 
 class QuestionListCreateView(ListCreateAPIView):
@@ -73,20 +73,23 @@ class CorrectAnswerView(APIView):
     """
     View to mark an answer as correct.
     """
-    permission_classes = [ReadOnlyOrIsAuthenticated]
+    permission_classes = [IsQuestionAuthor]
 
     def post(self, request, *args, **kwargs):
         answer_id = self.kwargs['answer_id']
         try:
             answer = Answer.objects.get(id=answer_id)
-            if answer.question.author != request.user:
-                return Response({"error": "Only the author of the question can mark the correct answer."}, status=403)
 
-            # Unmark the existing correct answer for the related question
+            # Ensure the requesting user is the author of the question
+            self.check_object_permissions(request, answer)
+
+            # Unmark any existing correct answers for this question
             Answer.objects.filter(question=answer.question).update(is_correct=False)
+
             # Mark the selected answer as correct
             answer.is_correct = True
             answer.save()
-            return Response({"message": "Marked as correct answer."})
+
+            return Response({"message": "Marked as correct answer.", "answer_id": answer.id})
         except Answer.DoesNotExist:
             return Response({"error": "Answer not found."}, status=404)

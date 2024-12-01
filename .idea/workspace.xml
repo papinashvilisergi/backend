@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72c9a3e8-d329-4fac-a3d8-9862fd1999a9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/cfcollab/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/cfcollab/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfcollab/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cfcollab/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ouroverflow/permissions.py" beforeDir="false" afterPath="$PROJECT_DIR$/ouroverflow/permissions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ouroverflow/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ouroverflow/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +26,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -39,7 +43,7 @@
     &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -90,7 +94,9 @@
       <option name="presentableId" value="Default" />
       <updated>1732971507219</updated>
       <workItem from="1732971513246" duration="372000" />
-      <workItem from="1732971892069" duration="4027000" />
+      <workItem from="1732971892069" duration="5093000" />
+      <workItem from="1732989644101" duration="1267000" />
+      <workItem from="1733032963983" duration="2232000" />
     </task>
     <servers />
   </component>
